@@ -3,6 +3,7 @@ import { Background } from "../components/Background"
 import { ItemBox } from "../components/ItemBox"
 import { BuyButton } from "../components/BuyButton"
 import { products, type Product } from "../data/products"
+import sazonalLogo from "../assets/sazonal-light.png"
 
 function Home() {
   const [selected, setSelected] = React.useState<Product>(products[1])
@@ -20,10 +21,10 @@ function Home() {
                 onClick={() => setSelected(product)}
               />
             ))}
-            <img src="/sazonal-light.png" alt="Logo" className="h-[150px] hidden md:block flex" />
+            <img src={sazonalLogo} alt="Logo" className="h-[150px] hidden md:block" />
           </div>
           <div className="flex text-gray-900 flex-col gap-4 w-1/2 items-end md:self-end md:pt-4">
-            <img src="/sazonal-light.png" alt="Logo" className="h-[30px] md:hidden" />
+            <img src={sazonalLogo} alt="Logo" className="h-[30px] md:hidden" />
             <h1 className="text-4xl font-bold text-end uppercase md:py-4">
               {selected.text}
             </h1>

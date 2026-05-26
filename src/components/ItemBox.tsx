@@ -26,8 +26,8 @@ export function ItemBox({ image, text, onClick, alt = "" }: ItemBoxProps) {
 
       <div className="absolute inset-0 bg-black/30" />
 
-    <span
-      className="
+      <span
+        className="
         absolute bottom-0 right-0
         text-right
         text-white font-semibold
@@ -35,9 +35,9 @@ export function ItemBox({ image, text, onClick, alt = "" }: ItemBoxProps) {
         px-2 md:px-4 py-1 md:py-2
         drop-shadow-md
       "
-    >
-      {text}
-    </span>
+      >
+        {text}
+      </span>
     </button>
   );
 }

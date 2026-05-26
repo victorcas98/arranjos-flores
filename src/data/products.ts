@@ -1,3 +1,7 @@
+import sznl1 from "../assets/sznl-1.png"
+import sznl2 from "../assets/sznl-2.png"
+import sznl3 from "../assets/sznl-3.png"
+
 export interface Product {
   id: string;
   image: string;
@@ -10,7 +14,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "kit-completo",
-    image: "/sznl-3.png",
+    image: sznl3,
     text: "Arranjo + Vela + Mini",
     price: "R$ 230,00",
     description: "Kit completo com arranjo de flores, vela aromática e mini arranjo.",
@@ -18,7 +22,7 @@ export const products: Product[] = [
   },
   {
     id: "akemi",
-    image: "/sznl-2.png",
+    image: sznl2,
     text: "Arranjo + Vela Akemi",
     price: "R$ 160,00",
     description: "Arranjo de flores combinado com a exclusiva vela Akemi.",
@@ -26,7 +30,7 @@ export const products: Product[] = [
   },
   {
     id: "basico",
-    image: "/sznl-1.png",
+    image: sznl1,
     text: "Arranjo Básico",
     price: "R$ 90,00",
     description: "Arranjo de flores frescas perfeito para qualquer ocasião.",
